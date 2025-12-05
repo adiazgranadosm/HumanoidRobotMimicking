@@ -1,4 +1,4 @@
-# Human Motion mimicking in Humanoid GRX Robot
+# Human Motion Mimicking in Humanoid GRX Robot
 
 HumanoidRobotMimickingMotion
 
