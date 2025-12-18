@@ -90,9 +90,9 @@ Raw vision data is noisy. An EMA filter is applied with tuned alpha values:
 
 ## 📊 Results
 
-<img width="1227" height="724" alt="image" src="https://github.com/user-attachments/assets/866908a5-bc8c-4da6-81f4-024dbedda45d" />
+<img width="900"  alt="image" src="https://github.com/user-attachments/assets/866908a5-bc8c-4da6-81f4-024dbedda45d" />
 
-<img width="1133" height="712" alt="image" src="https://github.com/user-attachments/assets/c3b3dc9e-4f01-4b53-9107-d86d75af026f" />
+<img width="900"  alt="image" src="https://github.com/user-attachments/assets/c3b3dc9e-4f01-4b53-9107-d86d75af026f" />
 
 
 * **Latency:** The system operates with a trajectory buffer of ~120ms to ensure smooth interpolation.
