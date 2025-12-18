@@ -105,5 +105,10 @@ Raw vision data is noisy. An EMA filter is applied with tuned alpha values:
 * **Fourier Intelligence.** (2024). GR-2 Humanoid Robot Technical Specifications.
 
 
+## License
+
+This project is for academic research purposes.
+
+
 
 
