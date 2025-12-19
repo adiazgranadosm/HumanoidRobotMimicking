@@ -89,6 +89,17 @@ Raw vision data is noisy. An EMA filter is applied with tuned alpha values:
 * **Latency:** The system operates with a trajectory buffer of ~120ms to ensure smooth interpolation.
 * **Accuracy:** Inverse correlations observed in Shoulder Roll (-0.69) and Index Finger (-0.19) confirm effective mapping from human input to robot actuation.
 
+## Repo Structure
+
+- mimic_node.py (in scripts/): The primary ROS 2 node that orchestrates the teleoperation pipeline, capturing camera frames, running YOLO inference, and publishing joint trajectory commands to the robot.
+
+- calibrate_user.py (in scripts/): Implements the CMA-ES optimization routine to generate a user-specific calibration profile, mapping human limb ranges to the robot's kinematic limits.
+
+- launch/: Contains the ROS 2 launch files (e.g., mimic.launch.py) to start the camera drivers, the mimicking node, and the visualization tools simultaneously.
+
+- urdf/: Stores the Universal Robot Description Format files that define the physical dimensions and joint limits of the Fourier Intelligence GRX robot for kinematic calculations.
+
+- requirements.txt: Specifies the Python dependencies required for the project, including ultralytics for pose estimation, cma for optimization, and roboticstoolbox-python for kinematics.
 
 ## License
 
