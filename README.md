@@ -50,16 +50,7 @@ Raw vision data is noisy. An EMA filter is applied with tuned alpha values:
 * $\alpha = 0.6$ for Arms (Prioritizing stability).
 * $\alpha = 0.7$ for Hands (Prioritizing responsiveness).
 
-## Dependencies
-
-* **ROS 2 Humble** (Desktop Full)
-* `ultralytics` (YOLOv11)
-* `cma` (Optimization library)
-* `roboticstoolbox-python` (Kinematics helper)
-* `opencv-python`
-* `torch` (CUDA recommended)
-
-## 🔧 Installation & Usage
+## Installation & Usage
 
 1.  **Clone the repository:**
     ```bash
@@ -97,12 +88,6 @@ Raw vision data is noisy. An EMA filter is applied with tuned alpha values:
 
 * **Latency:** The system operates with a trajectory buffer of ~120ms to ensure smooth interpolation.
 * **Accuracy:** Inverse correlations observed in Shoulder Roll (-0.69) and Index Finger (-0.19) confirm effective mapping from human input to robot actuation.
-
-##  References
-
-* **Corke, P., & Haviland, J. (2021).** Not your grandmother’s toolbox—The Robotics Toolbox for Python. *IEEE Robotics & Automation Magazine*.
-* **Seekircher, A., et al. (2013).** Motion capture and contemporary optimization algorithms for robust and stable motions on simulated biped robots. *RoboCup 2012*.
-* **Fourier Intelligence.** (2024). GR-2 Humanoid Robot Technical Specifications.
 
 
 ## License
